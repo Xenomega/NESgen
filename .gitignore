@@ -1,0 +1,27 @@
+#################
+# Files
+#################
+*.com
+*.class
+*.dll
+*.exe
+*.pdb
+*.dll.config
+*.cache
+*.suo
+*.pyc
+*.DS_Store
+*.project
+*.pydevproject
+*.cproject
+*.externalToolBuilders
+*.settings
+
+#################
+# Directories
+#################
+BatchCompiler
+NESgen/NESsys/bin/*
+NESgen/NESsys/build
+NESgen/NESsys/Default
+NESgen/NESgen/src/__pycache__

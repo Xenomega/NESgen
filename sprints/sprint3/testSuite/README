@@ -1,0 +1,5 @@
+-UNIX systems supported only for this script.
+-ROMs go in this folder. 
+-Execute using python3.5 and it'll batch compile ROM->C->Executable and put the executables in the /bin/ folder, and copy the C files generated into the /src/ folder in this directory.
+
+

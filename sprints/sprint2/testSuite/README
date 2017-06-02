@@ -1,0 +1,16 @@
+FIRST, NOTE: This testSuite script compiles a bit slower because it waits half a second between compiling before copying because I found it originally didn't reflect changes and would prematurely copy the previous file.
+
+
+ROMs/bin:
+
+-Try RGB_binary to show controller input (use arrow keys to cycle every color in the NES color palette).
+	-It would not update what PPU renders like that or process input if it wasn't executing properly.
+	-Compare to the 2C02 color palette at: https://wiki.nesdev.com/w/index.php/PPU_palettes#2C02 (use the displayed code, colors should more or less match. NOTE: palette is 0x40 in size, so anything past this is really index & 0x3F, so 0x5C = 0x1C)
+-Polar*_binary are a set of games which show off sprites and animations for them.
+-Flame_binary shows an animated fire.
+-Motion_binary is a little abstract movie clip.
+
+-In general these show the CPU is obviously handling interrupts related to rendering properly, processing instructions properly (storing data in PPU registers, updating colors and positions of sprites), and the PPU is rendering accordingly based off the data being modified by game code execution. Try comparing them to another emulator! (note, color palette I used may be different from another emulator so their might be a slight color difference).
+
+
+NOTE: MOST ACTUAL ROMs AREN'T SUPPORTED DUE TO RUNTIME CALCULATED VALUES OR THE USE OF MAPPERS. I WILL LIKELY BUILD ON RUNTIME ANALYSIS IN THE COMPILER IN THE NEXT STAGES, ALTHOUGH WILL OBVIOUSLY BE LIMITED TO SPECIAL CASES!
