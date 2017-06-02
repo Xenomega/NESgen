@@ -21,7 +21,6 @@
 # Directories
 #################
 BatchCompiler
-NESgen/NESsys/bin/*
 NESgen/NESsys/build
 NESgen/NESsys/Default
 NESgen/NESgen/src/__pycache__
